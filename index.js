@@ -15,45 +15,36 @@ document.addEventListener("keypress", function(event) {
   animation(event.key);
   });
   
-  function sound(key) {
-    switch (key) {
-      case "w":
-      var sound1 = new Audio("w.mp3");
-      sound1.play();
-      break;
-    
-      case "a":
-      var sound2 = new Audio("a.mp3");
-      sound2.play();
-      break;
-    
-      case "s":
-      var sound3 = new Audio('s.mp3');
-      sound3.play();
-      break;
-    
-      case "d":
-      var sound4 = new Audio('d.mp3');
-      sound4.play();
-      break;
-    
-      case "j":
-      var sound5 = new Audio('j.mp3');
-      sound5.play();
-      break;
-    
-      case "k":
-      var sound6 = new Audio('k.mp3');
-      sound6.play();
-      break;
-    
-      case "l":
-      var sound7 = new Audio('l.mp3');
-      sound7.play();
-      break;
-    
-      default: console.log(key);
+    var key ;
+    function sound(key){
+    if(key == "w"){
+        var sound1 = new Audio ("w.mp3")
+        sound1.play();
     }
+    if(key == "a"){
+      var sound2 = new Audio ("a.mp3")
+      sound2.play();
+    }
+    if(key == "s"){
+         var sound3 = new Audio ("s.mp3")
+        sound3.play();
+    }
+     if(key == "d"){
+         var sound4 = new Audio ("d.mp3")
+        sound4.play();
+     }
+      if(key == "j"){
+         var sound5 = new Audio ("j.mp3")
+         sound5.play();
+      }
+     if(key == "k"){
+         var sound6 = new Audio ("k.mp3")
+         sound6.play();
+     }
+      if(key == "l"){
+       var sound7 = new Audio ("l.mp3")
+          sound7.play();
+      }
     }
 
     function animation(currentKey) {
